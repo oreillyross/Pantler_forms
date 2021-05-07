@@ -1,0 +1,39 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+form {
+  display: grid;
+  padding: 0.9rem;
+}
+
+form > * {
+  padding: 0.9rem;
+}
+
+/* form label input {
+  color: #031015;
+  margin-top: 1rem;
+  display: grid;
+  background: #e1ebef;
+  padding: 1rem;
+  width: 100%;
+  font-family: Roboto;
+  font-weight: 800;
+  font-size: 1.3rem;
+} */
+
+form label {
+  text-align: left;
+}
